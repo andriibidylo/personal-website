@@ -41,7 +41,7 @@ a {
 
 /* all similar content styling codes */
 section {
-  padding: 100px 0;
+  padding: 70px 0;
   
 }
 .max-width {
@@ -74,8 +74,8 @@ section .title {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  margin-bottom: 15px;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
   font-family: "Ubuntu", sans-serif;
 }
 .nav-project-btn a {
@@ -179,6 +179,7 @@ section .title::after {
   filter: brightness(90%);
 }
 
+
 /* about section  */
 .about {
   margin-bottom: 64pt;
@@ -277,7 +278,24 @@ section .title::after {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+}
+.portfolio .portfolio-content .card-title1,
+.card-title2, .card-title3
+{  
+  text-align:center;
+  font-size: 23px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .portfolio .portfolio-content .card-title-text1,
+  .card-title-text2, .card-title-text3
+{  
+  text-align:center;
+  font-size: 14px;
+  color: #888;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio .portfolio-content 
@@ -288,16 +306,19 @@ section .title::after {
 .card5,
 .card6 {
   background-size: cover;
-  width: 315px;
-  height: 197px;
+  width: 630px;
+  height: 394px;
   border-radius: 6px;
   padding: 0;
   cursor: pointer;
   transition: all 0.3s ease;
   color: white;
-  margin-bottom: 20pt;
+  margin-bottom: 60pt;
+  margin-top: 10px;
 }
-
+.portfolio .portfolio-content .card3 {
+  margin-bottom: 15pt;
+}
 .card1 {
   background-image: url("./images/1.png");
 }
@@ -305,7 +326,7 @@ section .title::after {
   background-image: url("./images/28.png");
 }
 .card3 {
-  background-image: url("./images/1.png");
+  background-image: url("./images/40.png");
 }
 .card4 {
   background-image: url("./images/1.png");
@@ -316,7 +337,6 @@ section .title::after {
 .card6 {
   background-image: url("./images/1.png");
 }
-
 .portfolio .portfolio-content .card1 .box,
 .card2 .box,
 .card3 .box,
@@ -324,10 +344,11 @@ section .title::after {
 .card5 .box,
 .card6 .box {
   transition: all 0.3s ease;
-  width: 315px;
-  height: 197px;
+  width: 630px;
+  height: 394px;
   margin: 0;
   display: none;
+ 
 }
 .portfolio .portfolio-content .card1:hover,
 .card2:hover,
@@ -335,8 +356,9 @@ section .title::after {
 .card4:hover,
 .card5:hover,
 .card6:hover {
-  transform: scale(1.05);
+  transform: scale(0.95);
   background-color: rgba(0, 0, 0, 0.664);
+
 }
 .portfolio .portfolio-content .card1:hover .box,
 .card2:hover .box,
@@ -351,6 +373,7 @@ section .title::after {
   text-align: center;
   align-items: center;
   justify-content: center;
+  
 }
 
 .portfolio .portfolio-content .card1 i,
@@ -544,6 +567,7 @@ section .title::after {
   }
   .portfolio .portfolio-content .card {
     width: calc(50% - 10px);
+
     margin-bottom: 20px;
   }
   .skills .skills-content .column,
@@ -578,10 +602,28 @@ section .title::after {
 @media (max-width: 690px) {
   .max-width {
     padding: 0 23px;
+    
   }
-  .portfolio .portfolio-content .card {
-    width: 100%;
+  .portfolio .portfolio-content .card1,
+  .card2,
+  .card3 {
+    width: 438.48px;
+    height: 274.05px;
+   
+  
   }
+  .portfolio .portfolio-content .card1 .box,
+.card2 .box,
+.card3 .box,
+.card4 .box,
+.card5 .box,
+.card6 .box {
+  width: 438.48px;
+  height: 274.05px;
+ 
+}
+.skills .skills-content p {
+  font-size: 16px;
 }
 
 @media (max-width: 500px) {
@@ -607,4 +649,6 @@ section .title::after {
     font-size: 23px;
     line-height: 38px;
   }
+}
+
 }

@@ -78,6 +78,10 @@ section .title {
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
 }
+
+.nav-project-btn {
+  margin-bottom: 30px;
+}
 .nav-project-btn a {
   font-family: "Ubuntu", sans-serif;
 }
@@ -191,12 +195,13 @@ section .title::after {
   background-color: crimson;
 }
 .tools-ul-1,
-.tools-ul-2 {
+.tools-ul-2,
+.tools-ul-3 {
   display: flex;
   justify-content: center;
 }
 .tools .tools-ul-1 li,
-.tools-ul-2 li {
+.tools-ul-2 li, .tools-ul-3 li{
   list-style-type: none;
   padding-left: 10px;
   color: crimson;
@@ -207,6 +212,10 @@ section .title::after {
 }
 .tools .tools-ul-2 {
   margin: 0 10px 20px 10px;
+}
+.tools .tools-ul-3 {
+  padding: 0;
+  margin: 8px 10px 20px 10px;
 }
 .sourse-code-bt {
   display: flex;

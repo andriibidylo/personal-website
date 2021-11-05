@@ -5,7 +5,6 @@ window.addEventListener('scroll', () => {
     header.classList.toggle('sticky', window.scrollY > 20)
 })
 
-
 // Drop-down menu
 let fixed = document.querySelector('body')
 let menuBtn = document.querySelector('.menu-btn i')
