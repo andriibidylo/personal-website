@@ -280,7 +280,7 @@ section .title::after {
   align-items: center;
 }
 .portfolio .portfolio-content .card-title1,
-.card-title2, .card-title3
+.card-title2, .card-title3, .card-title4, .card-title5
 {  
   text-align:center;
   font-size: 23px;
@@ -289,7 +289,7 @@ section .title::after {
 }
 
   .portfolio .portfolio-content .card-title-text1,
-  .card-title-text2, .card-title-text3
+  .card-title-text2, .card-title-text3, .card-title-text4, .card-title-text5
 {  
   text-align:center;
   font-size: 14px;
@@ -316,7 +316,7 @@ section .title::after {
   margin-bottom: 60pt;
   margin-top: 10px;
 }
-.portfolio .portfolio-content .card3 {
+.portfolio .portfolio-content {
   margin-bottom: 15pt;
 }
 .card1 {
@@ -326,16 +326,16 @@ section .title::after {
   background-image: url("./images/28.png");
 }
 .card3 {
-  background-image: url("./images/40.png");
+  background-image: url("./images/31.png");
 }
 .card4 {
-  background-image: url("./images/1.png");
+  background-image: url("./images/41.png");
 }
 .card5 {
-  background-image: url("./images/1.png");
+  background-image: url("./images/48.png");
 }
 .card6 {
-  background-image: url("./images/1.png");
+  background-image: url("./images/48.png");
 }
 .portfolio .portfolio-content .card1 .box,
 .card2 .box,
@@ -606,7 +606,9 @@ section .title::after {
   }
   .portfolio .portfolio-content .card1,
   .card2,
-  .card3 {
+  .card3,
+  .card4,
+  .card5 {
     width: 438.48px;
     height: 274.05px;
    
