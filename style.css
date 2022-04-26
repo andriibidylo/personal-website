@@ -626,12 +626,13 @@ section .title::after {
 }
 .skills .skills-content p {
   font-size: 16px;
+  width: 438.48px;
 }
 
 @media (max-width: 500px) {
   .about .about-content .right .text,
   .skills .skills-content .left .text {
-    font-size: 19px;
+    font-size: 16px;
   }
   .contact .right form .fields {
     flex-direction: column;
