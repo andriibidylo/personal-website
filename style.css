@@ -259,7 +259,7 @@ section .title::after {
   font-size: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 32em;
+  width: 40em;
 }
 
 .skills .skills-content .column span {
@@ -599,6 +599,15 @@ section .title::after {
   }
 }
 
+@media (max-width: 860px) {
+  .skills .skills-content p {
+    text-align: justify;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 37em;
+  }
+}
 @media (max-width: 690px) {
   .max-width {
     padding: 0 23px;
