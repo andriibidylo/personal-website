@@ -41,9 +41,9 @@
   <!-- about-project section -->
   <section class="max-width about-project" id='about-project'>
 
-    <h2 class="title">Social Network</h2>
+    <h2 class="title">Pizza Maggiore</h2>
     <div class="git-btn">
-      <a href="https://github.com/andrewbidylo/social-network" target="_blank">
+      <a href="https://github.com/andrewbidylo/pizza-maggiore" target="_blank">
         <div class="img-git">
           <img src="../images/icon-git.png" alt="git">GitHub link
         </div>        
@@ -52,26 +52,19 @@
     </div>
     </div>
       <div class="discription">
-        <p>Social Network is a large single-page app, built with TypeScript, JavaScript, React,
-           Redux, HTML, CSS3, SASS, Material-UI and Jest for testing.</p>
-        <p>During the IT-Incubator front-end course I created this app and I could apply my knowledge into practice using a modern approach of codding.
-          </p>After that course, to make the existing JavaScript code more predictable and 
-          reduce the number of mistakes in the next developing process I decided to refactor the existing JavaScript codebase into TypeScript.</p>
-          <p>Also to make sure that an expected result of executing code is correct, I wrote a few tests using Jest library. </p>
-
+        <p>Pizza Maggiore is a single-page app, built with TypeScript, React,
+           Redux, HTML, SASS and Jest for testing.</p>
+        <p></p>
         <ul style="margin: 10px 0 10px 0">
           <li>The functionality of the app: </li>
-          <li>- Cookie-based authentication with controlled forms.</li>
-          <li>- Personal page with changeable information and user's photo.</li>
-          <li>- Users page. Subscriptions functionality, pagination, filter by name and sort dependence of subscription were implemented there. </li>
-          <li>- Chat page. To create it I used the JavaScript library Socket.IO which allows participants to communicate with each other. 
-            Besides the messages are displayed names and user photos of participants.</li>
-          <li>- Weather page allows checking current weather depending on the input city. </li>
+          <li>- User can add pizzas to the cart;</li>
+          <li>- Price and quantity are shown in the header, cart and items info;</li>
+          <li>- User can see detailed information about products;</li>
+          <li>- The app generates the query with search parameters in the browser search field to allow users to share the link with found products;</li>
+          <li>- Unpaid products save in the local storage;</li>
           <li>- etc.</li>
         </ul>
         
-        
-        <p>Finaly the project was deployed on AWS.</p>
 
       </div>
       <!-- Slider main container -->
@@ -79,22 +72,16 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <img src="../images/0.png" loading="lazy" alt="screenshot">
+            <img src="../images/41.png" loading="lazy" alt="screenshot">
           </div>
           <div class="swiper-slide">
-            <img src="../images/1.png" loading="lazy" alt="screenshot">
+            <img src="../images/42.png" loading="lazy" alt="screenshot">
           </div>
           <div class="swiper-slide">
-            <img src="../images/2.png" loading="lazy" alt="screenshot">
+            <img src="../images/43.png" loading="lazy" alt="screenshot">
           </div>
           <div class="swiper-slide">
-            <img src="../images/3.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/4.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/5.png" loading="lazy" alt="screenshot">
+            <img src="../images/44.png" loading="lazy" alt="screenshot">
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -104,65 +91,31 @@
     </div>
   </section>
 
-  <!-- Project design section -->
-  <section class="project-design max-width">
-    <h1 class="title second">Project design</h1>
-    <div class="discription">
-      The design was created in Figma to get a clear visual structure of every page and get parameters of elements.
-    </div>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="../images/11.png" loading="lazy" alt="screenshot">
-        </div>
-        <div class="swiper-slide">
-          <img src="../images/12.png" loading="lazy" alt="screenshot">
-        </div>
-        <div class="swiper-slide">
-          <img src="../images/13.png" loading="lazy" alt="screenshot">
-        </div>
-        <div class="swiper-slide">
-          <img src="../images/14.png" loading="lazy" alt="screenshot">
-        </div>
-        <div class="swiper-slide">
-          <img src="../images/15.png" loading="lazy" alt="screenshot">
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-    </div>
-
-  </section>
   <!-- Development section -->
   <section class="development max-width">
     <h1 class="title second">Developmet</h1>
     <div class="discription">
-      To make an app easily scalable I've chosen Redux for state management. Initially, I used classes components and life-cycle methods to handle behave components. 
-      But then to make components easier to read, test and debug I refactored and changed the code to functional components and React Hooks. 
-      To change the browser URL, and keep the UI in sync with the URL I used React Router. For the cases when a server returns code responses 400 and 500, I created a feature that shows a message with a current error. 
-      Also before the app is rendered users can see a pre-loader gif, which helps them realize that the app works well and improves the user experience in general.
-Going through a ton of challenging tasks during development helped me understand dipper an application workflow and patterns which help to reduce mistakes and make code more predictable.
+      To make the code base more predictable and avoid bugs during the development process I choose TypeScript. 
+      As a state management system, I added a Redux and used Redux Toolkit to reduce writing boilerplate code. 
+      Using Redux DevTools I was testing the state during the development process.
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="../images/6.png" loading="lazy"alt="screenshot">
+          <img src="../images/45.png" loading="lazy"alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/7.png" loading="lazy" alt="screenshot">
+          <img src="../images/46.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/8.png" loading="lazy" alt="screenshot">
+          <img src="../images/46-1.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/9.png" loading="lazy" alt="screenshot">
+          <img src="../images/46-2.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/10.png" loading="lazy" alt="screenshot">
+          <img src="../images/47.png" loading="lazy" alt="screenshot">
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -170,7 +123,7 @@ Going through a ton of challenging tasks during development helped me understa
       <div class="swiper-button-next"></div>
 
     </div>
-    <a class="sourse-code-bt" href="https://main.d2j3imhuvl884k.amplifyapp.com/" target="_blank">View Live</a>
+    <a class="sourse-code-bt" href="https://pizza-maggiore.netlify.app/" target="_blank">View Live</a>
   </section>
   <footer>
     <div class="footer">
