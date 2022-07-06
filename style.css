@@ -358,7 +358,6 @@ section .title::after {
 .card6:hover {
   transform: scale(0.95);
   background-color: rgba(0, 0, 0, 0.664);
-
 }
 .portfolio .portfolio-content .card1:hover .box,
 .card2:hover .box,
@@ -373,7 +372,6 @@ section .title::after {
   text-align: center;
   align-items: center;
   justify-content: center;
-  
 }
 
 .portfolio .portfolio-content .card1 i,
@@ -705,11 +703,32 @@ margin-left: 50px;
 .card6 .box {
   width: 350.00px;
   height: 219.00px;
+  transition:none;
  
 }
 .skills .skills-content p {
   font-size: 14px;
   width: 350.00px;
 }
+ 
+.portfolio .portfolio-content .card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover {
+  transform: none;
+}
+.portfolio .portfolio-content .card1:hover .box,
+.card2:hover .box,
+.card3:hover .box,
+.card4:hover .box,
+.card5:hover .box,
+.card6:hover .box {
+  transform: none;
+  background-color:none;
+  display:none;
 }
 }
+}
+
