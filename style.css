@@ -280,7 +280,7 @@ section .title::after {
   align-items: center;
 }
 .portfolio .portfolio-content .card-title1,
-.card-title2, .card-title3, .card-title4, .card-title5
+.card-title2, .card-title3, .card-title4, .card-title5, .card-title6
 {  
   text-align:center;
   font-size: 23px;
@@ -289,7 +289,7 @@ section .title::after {
 }
 
   .portfolio .portfolio-content .card-title-text1,
-  .card-title-text2, .card-title-text3, .card-title-text4, .card-title-text5
+  .card-title-text2, .card-title-text3, .card-title-text4, .card-title-text5, .card-title-text6
 {  
   text-align:center;
   font-size: 14px;
@@ -323,16 +323,16 @@ section .title::after {
   background-image: url("./images/41.png");
 }
 .card2 {
-  background-image: url("./images/28.png");
+  background-image: url("./images/60.png");
 }
 .card3 {
-  background-image: url("./images/31.png");
+  background-image: url("./images/28.png");
 }
 .card4 {
-  background-image: url("./images/1.png");
+  background-image: url("./images/31.png");
 }
 .card5 {
-  background-image: url("./images/48.png");
+  background-image: url("./images/1.png");
 }
 .card6 {
   background-image: url("./images/48.png");

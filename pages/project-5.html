@@ -20,9 +20,9 @@
       <div class="logo"><a href="../index.html#">Front-End Developer <span>Andrew Bidylo</span></a></div>
       <ul class="menu">
         <li><a href="../index.html#about" class="menu-btn">About</a></li>
-        <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
-        <li><a href="index.html#portfolio" class="menu-btn">Portfolio</a></li>
-        <li><a href="index.html#contact" class="menu-btn">Contacts</a></li>
+        <li><a href="../index.html#skills" class="menu-btn">Skills</a></li>
+        <li><a href="../index.html#portfolio" class="menu-btn">Portfolio</a></li>
+        <li><a href="../index.html#contact" class="menu-btn">Contacts</a></li>
       </ul>
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -34,17 +34,16 @@
       <a class="prev-btn" href="./project-4.html"><span><</span> Prev</a>
     </div>
     <div>
-      <a class="next-btn" href="./project-1.html">Next <span>></span>
+      <a class="next-btn" href="./project-6.html">Next <span>></span>
       </a>
     </div>
   </div>
-
   <!-- about-project section -->
   <section class="max-width about-project" id='about-project'>
 
-    <h2 class="title">Pill Popper</h2>
+    <h2 class="title">Social Network</h2>
     <div class="git-btn">
-      <a href="https://github.com/andrewbidylo/pill-popper" target="_blank">
+      <a href="https://github.com/andrewbidylo/social-network" target="_blank">
         <div class="img-git">
           <img src="../images/icon-git.png" alt="git">GitHub link
         </div>        
@@ -53,40 +52,49 @@
     </div>
     </div>
       <div class="discription">
-        <p>Pill Popper is a single-page, built with React, JavaScript,HTML, CSS, SASS, WebSocket, Socket IO, Twilio, Pusher. 
-          Back-end: Node.js, Express. Database: PostgreSQL. </p>
-        <br>
-        <p>As a user you can:</p>
-          <p>- add/edit/delete notifications</p>
-          <p>- set time, dosage, type of notifications</p>
-          <p>- get push/SMS notifications</p>
-          <p>- get info from FDA API</p>
-          <p>- get info about the nearest pharmacies</p>
-          <p>- add family members</p>
-          <p>- change dates</p>
-     
+        <p>Social Network is a large single-page app, built with TypeScript, JavaScript, React,
+           Redux, HTML, CSS3, SASS, Material-UI and Jest for testing.</p>
+        <p>During the IT-Incubator front-end course I created this app and I could apply my knowledge into practice using a modern approach of codding.
+          </p>After that course, to make the existing JavaScript code more predictable and 
+          reduce the number of mistakes in the next developing process I decided to refactor the existing JavaScript codebase into TypeScript.</p>
+          <p>Also to make sure that an expected result of executing code is correct, I wrote a few tests using Jest library. </p>
+
+        <ul style="margin: 10px 0 10px 0">
+          <li>The functionality of the app: </li>
+          <li>- Cookie-based authentication with controlled forms.</li>
+          <li>- Personal page with changeable information and user's photo.</li>
+          <li>- Users page. Subscriptions functionality, pagination, filter by name and sort dependence of subscription were implemented there. </li>
+          <li>- Chat page. To create it I used the JavaScript library Socket.IO which allows participants to communicate with each other. 
+            Besides the messages are displayed names and user photos of participants.</li>
+          <li>- Weather page allows checking current weather depending on the input city. </li>
+          <li>- etc.</li>
+        </ul>
+        
+        
+        <p>Finaly the project was deployed on AWS.</p>
+
       </div>
       <!-- Slider main container -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <img src="../images/48.png" loading="lazy" alt="screenshot">
+            <img src="../images/0.png" loading="lazy" alt="screenshot">
           </div>
           <div class="swiper-slide">
-            <img src="../images/49.png" loading="lazy" alt="screenshot">
+            <img src="../images/1.png" loading="lazy" alt="screenshot">
           </div>
           <div class="swiper-slide">
-            <img src="../images/50.png" loading="lazy" alt="screenshot">
+            <img src="../images/2.png" loading="lazy" alt="screenshot">
           </div>
           <div class="swiper-slide">
-            <img src="../images/51.png" loading="lazy" alt="screenshot">
+            <img src="../images/3.png" loading="lazy" alt="screenshot">
           </div>
           <div class="swiper-slide">
-            <img src="../images/52.png" loading="lazy" alt="screenshot">
+            <img src="../images/4.png" loading="lazy" alt="screenshot">
           </div>
           <div class="swiper-slide">
-            <img src="../images/53.png" loading="lazy" alt="screenshot">
+            <img src="../images/5.png" loading="lazy" alt="screenshot">
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -95,55 +103,30 @@
       </div>
     </div>
   </section>
- <!-- Project design section -->
- <section class="project-design max-width">
-  <h1 class="title second">ERD</h1>
-  <div class="discription">
-    <p>To create ERD I used app.diagrams.net and created 4 tables: users, children, childrens_medications and time_for taking medications.</p>
-  </div>
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <img src="../images/70.png" loading="lazy" alt="screenshot">
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
 
-  </div>
-
-</section>
-  <!-- Development section -->
-  <section class="development max-width">
-    <h1 class="title second">Developmet</h1>
+  <!-- Project design section -->
+  <section class="project-design max-width">
+    <h1 class="title second">Project design</h1>
     <div class="discription">
-      <p>Development process I started with creating a Database and Server. 
-        Then I created the main app component and went through the small components.</p>
-      <p>To communicate with the back-end and make requests I chose AXIOS library.</p>
-      <p>During development I used useEffect, useState, useContext and own custom hook</p>
+      The design was created in Figma to get a clear visual structure of every page and get parameters of elements.
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="../images/54.png" loading="lazy" alt="screenshot">
+          <img src="../images/11.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/55.png" loading="lazy" alt="screenshot">
+          <img src="../images/12.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/56.png" loading="lazy" alt="screenshot">
+          <img src="../images/13.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/57.png" loading="lazy" alt="screenshot">
+          <img src="../images/14.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/58.png" loading="lazy" alt="screenshot">
-        </div>
-        <div class="swiper-slide">
-          <img src="../images/59.png" loading="lazy" alt="screenshot">
+          <img src="../images/15.png" loading="lazy" alt="screenshot">
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -151,7 +134,43 @@
       <div class="swiper-button-next"></div>
 
     </div>
-    <a class="sourse-code-bt" href="https://pill-popper.netlify.app" target="_blank">View Live</a>
+
+  </section>
+  <!-- Development section -->
+  <section class="development max-width">
+    <h1 class="title second">Developmet</h1>
+    <div class="discription">
+      To make an app easily scalable I've chosen Redux for state management. Initially, I used classes components and life-cycle methods to handle behave components. 
+      But then to make components easier to read, test and debug I refactored and changed the code to functional components and React Hooks. 
+      To change the browser URL, and keep the UI in sync with the URL I used React Router. For the cases when a server returns code responses 400 and 500, I created a feature that shows a message with a current error. 
+      Also before the app is rendered users can see a pre-loader gif, which helps them realize that the app works well and improves the user experience in general.
+Going through a ton of challenging tasks during development helped me understand dipper an application workflow and patterns which help to reduce mistakes and make code more predictable.
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="../images/6.png" loading="lazy"alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/7.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/8.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/9.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/10.png" loading="lazy" alt="screenshot">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+    <a class="sourse-code-bt" href="https://main.d2j3imhuvl884k.amplifyapp.com/" target="_blank">View Live</a>
   </section>
   <footer>
     <div class="footer">
@@ -161,5 +180,7 @@
   <script src="../scripts/script.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="../scripts/swiper.js"></script>
+
 </body>
+
 </html>

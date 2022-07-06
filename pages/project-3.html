@@ -20,9 +20,9 @@
       <div class="logo"><a href="../index.html#">Front-End Developer <span>Andrew Bidylo</span></a></div>
       <ul class="menu">
         <li><a href="../index.html#about" class="menu-btn">About</a></li>
-        <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
-        <li><a href="index.html#portfolio" class="menu-btn">Portfolio</a></li>
-        <li><a href="index.html#contact" class="menu-btn">Contacts</a></li>
+        <li><a href="../index.html#skills" class="menu-btn">Skills</a></li>
+        <li><a href="../index.html#portfolio" class="menu-btn">Portfolio</a></li>
+        <li><a href="../index.html#contact" class="menu-btn">Contacts</a></li>
       </ul>
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -41,9 +41,9 @@
   <!-- about-project section -->
   <section class="max-width about-project" id='about-project'>
 
-    <h2 class="title">Runner</h2>
+    <h2 class="title">Githab Viewer</h2>
     <div class="git-btn">
-      <a href="https://github.com/andrewbidylo/shoe-store" target="_blank">
+      <a href="https://github.com/andrewbidylo/github-viewer" target="_blank">
         <div class="img-git">
           <img src="../images/icon-git.png" alt="git">GitHub link
         </div>        
@@ -52,35 +52,25 @@
     </div>
     </div>
       <div class="discription">
-        <p>Runner is a single-page e-commerce applaction, built with React, JavaScript, TypeScript, HTML, CSS, SASS. Back-end: mockapi.io</p>
-        <br>
-        <p>As a user you can:</p>
-          <p>- add/remove products from a cart</p>
-          <p>- see products in a cart</p>
-          <p>- mark/unmark favorite items</p>
-          <p>- see favorite items</p>
-          <p>- see price for added to cart items in the header and in the cart</p>
-          <p>- search itmes by name</p>
-          <p>- buy items</p>
-          <p>- see ordered items</p>
-
-
+        <p>Githab Viewer is a single-page applaction, built with React, TypeScript, HTML, CSS, SASS.</p>
+        <p>This App I have built for quick reviewing of GitHub accounts. I implemented a search field with a controlled input.</p>
+        <p>While coding, I had challenges with closure.  Every time when the timer was running it finished at 9 seconds instead of going to 0 and a 
+          component didn't unmount. I spent some hours trying to figure out this problem, doing research on the Internet. But finally, 
+          I  overcame this bug and it helped me understand closure much deeper.</p>
+          <p>To get information from GitHub I used GitHub API.</p>
       </div>
       <!-- Slider main container -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <img src="../images/31.png" loading="lazy" alt="screenshot">
+            <img src="../images/28.png" loading="lazy" alt="screenshot">
           </div>
           <div class="swiper-slide">
-            <img src="../images/32.png" loading="lazy" alt="screenshot">
+            <img src="../images/29.png" loading="lazy" alt="screenshot">
           </div>
           <div class="swiper-slide">
-            <img src="../images/33.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/34.png" loading="lazy" alt="screenshot">
+            <img src="../images/30.png" loading="lazy" alt="screenshot">
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -89,38 +79,64 @@
       </div>
     </div>
   </section>
-  <!-- Development section -->
-  <section class="development max-width">
-    <h1 class="title second">Developmet</h1>
+
+  <!-- Project design section -->
+  <section class="project-design max-width">
+    <h1 class="title second">Project design</h1>
     <div class="discription">
-      <p>For development I have chosen React and started with the main functionality and reusable component. Then step-by-step I added new features.</p>
-      <p>I created fake data on the mockapi.io. To comunicate with back-end and make reqestes I chose AXIOS library and asinc/await.</p>
-      <p>During development I used useEffect, useState, useContext and own custom hook.</p>
+      <p>To create the design of this app I've chosen Figma.</p>
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="../images/36.png" loading="lazy" alt="screenshot">
+          <img src="../images/27.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/37.png" loading="lazy" alt="screenshot">
+          <img src="../images/26.png" loading="lazy" alt="screenshot">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+  </section>
+  <!-- Development section -->
+  <section class="development max-width">
+    <h1 class="title second">Developmet</h1>
+    <div class="discription">
+      <p>Before I started the developing process I decided to manage the state of the app by using just React UseState hook. 
+        Because this is a pretty simple app and the state is small.</p>
+        <p>To reduce errors while developing I used TypeScripte and wrote a few types for some values.</p>
+        <p> The main feature of this app is viewing GitHub profiles.
+           So, I implemented a search field with a controlled input and timer which helps to reduce spending time for viewing one profile.</p>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="../images/20.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/38.png" loading="lazy" alt="screenshot">
+          <img src="../images/22.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/39.png" loading="lazy" alt="screenshot">
+          <img src="../images/23.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/40.png" loading="lazy" alt="screenshot">
+          <img src="../images/24.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/25.png" loading="lazy" alt="screenshot">
         </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-    <a class="sourse-code-bt" href="https://runner-store.netlify.app" target="_blank">View Live</a>
+    <a class="sourse-code-bt" href="https://github-viewer-777.netlify.app" target="_blank">View Live</a>
   </section>
   <footer>
     <div class="footer">
