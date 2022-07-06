@@ -685,5 +685,31 @@ margin-left: 50px;
  
   
 }
-
+@media (max-width: 450px) {
+  .portfolio .portfolio-content .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    width: 350.00px;
+    height: 219.00px;
+   
+  
+  }
+  .portfolio .portfolio-content .card1 .box,
+.card2 .box,
+.card3 .box,
+.card4 .box,
+.card5 .box,
+.card6 .box {
+  width: 350.00px;
+  height: 219.00px;
+ 
+}
+.skills .skills-content p {
+  font-size: 14px;
+  width: 350.00px;
+}
+}
 }
