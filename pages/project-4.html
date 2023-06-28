@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Front-End Developer - Andrew Bidylo</title>
-  <link rel="icon" href="../favicon.ico" />
+  <link rel="icon" href="../favicon.ico"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="projects-style.css">
@@ -20,9 +20,9 @@
       <div class="logo"><a href="../index.html#">Front-End Developer <span>Andrew Bidylo</span></a></div>
       <ul class="menu">
         <li><a href="../index.html#about" class="menu-btn">About</a></li>
-        <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
-        <li><a href="index.html#portfolio" class="menu-btn">Portfolio</a></li>
-        <li><a href="index.html#contact" class="menu-btn">Contacts</a></li>
+        <li><a href="../index.html#skills" class="menu-btn">Skills</a></li>
+        <li><a href="../index.html#portfolio" class="menu-btn">Portfolio</a></li>
+        <li><a href="../index.html#contact" class="menu-btn">Contacts</a></li>
       </ul>
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -31,8 +31,7 @@
   </nav>
   <div class="max-width nav-project-btn">
     <div>
-      <a class="prev-btn" href="./project-3.html"><span>
-          <</span> Prev</a>
+      <a class="prev-btn" href="./project-3.html"><span><</span> Prev</a>
     </div>
     <div>
       <a class="next-btn" href="./project-5.html">Next <span>></span>
@@ -42,93 +41,96 @@
   <!-- about-project section -->
   <section class="max-width about-project" id='about-project'>
 
-    <h2 class="title">Runner</h2>
-    <div class="git-btn">
-      <a href="https://github.com/andrewbidylo/shoe-store" target="_blank">
-        <div class="img-git">
-          <img src="../images/icon-git.png" alt="git">GitHub link
+    <h2 class="title">GitHub Viewer</h2>
+    <div class="btn-wrapper">
+      <div class="btn-group" data-grouptype=OR>  
+        <a class="a" href="https://github-viewer-777.netlify.app" target="_blank">Live project</a> 
+        <a class="b" href="https://github.com/andrewbidylo/github-viewer" target="_blank">Code on GitHub</a>
+      </div>
+    </div>
+    </div>
+    </div>
+      <div class="discription">
+        <p>The GitHub Viewer is a single-page application built with React, TypeScript, HTML, CSS, and SASS.</p>
+        <p>I developed this app to provide a quick and convenient way to review GitHub accounts. The main feature is a search field with controlled input, allowing users to search for specific GitHub profiles.</p>
+        <p>During the coding process, I encountered challenges related to closures. Specifically, there was an issue with the timer not reaching 0 and a component not unmounting as expected. I spent several hours researching and troubleshooting this problem, delving deeper into the concept of closures. Eventually, I successfully resolved the bug, which significantly enhanced my understanding of closure mechanisms.</p>
+        <p>To retrieve information from GitHub, I utilized the GitHub API, which provided the necessary data for displaying user profiles and other related details.</p>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="../images/28.png" loading="lazy" alt="screenshot">
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/29.png" loading="lazy" alt="screenshot">
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/30.png" loading="lazy" alt="screenshot">
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
-    </a>
-    </div>
-    </div>
+  </section>
+
+  <!-- Project design section -->
+  <section class="project-design max-width">
+    <h1 class="title second">Project design</h1>
     <div class="discription">
-      <p>Runner is a single-page e-commerce application built with React, JavaScript, TypeScript, HTML, CSS, and SASS.
-        The back-end is powered by mockapi.io.</p>
-      <br>
-      <p>As a user, you have the following functionalities:</p>
-      <p>- add/remove products from the cart.</p>
-      <p>- view the products in the cart.</p>
-      <p>- mark/unmark favorite items.</p>
-      <p>- view the favorite items.</p>
-      <p>- see the price for the items added to the cart in the header and cart sections.</p>
-      <p>- search for items by name.</p>
-      <p>- purchase items.</p>
-      <p>- view the ordered items.</p>
-
-
+      <p>To create the design of this app I've chosen Figma.</p>
     </div>
-    <!-- Slider main container -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="../images/31.png" loading="lazy" alt="screenshot">
+          <img src="../images/27.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/32.png" loading="lazy" alt="screenshot">
-        </div>
-        <div class="swiper-slide">
-          <img src="../images/33.png" loading="lazy" alt="screenshot">
-        </div>
-        <div class="swiper-slide">
-          <img src="../images/34.png" loading="lazy" alt="screenshot">
+          <img src="../images/26.png" loading="lazy" alt="screenshot">
         </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
+
     </div>
-    </div>
+
   </section>
   <!-- Development section -->
   <section class="development max-width">
     <h1 class="title second">Development</h1>
     <div class="discription">
-      <p>For development, I chose React as the primary framework and started by focusing on implementing the core
-        functionality and creating reusable components. I followed a step-by-step approach to gradually add new features
-        and enhance the application.</p>
-      <p>To simulate data, I utilized the mockapi.io platform to create fake data. To communicate with the back-end and
-        make requests, I opted for the AXIOS library, leveraging its async/await functionality for efficient
-        asynchronous operations.</p>
-      <p>Throughout the development process, I made use of various React hooks such as useEffect, useState, and
-        useContext. Additionally, I implemented custom hooks to encapsulate and reuse specific logic across different
-        components. These hooks contributed to the overall organization and maintainability of the codebase.</p>
+      <p>Before starting the development process, I made the decision to manage the state of the app using only the React useState hook. This choice was influenced by the simplicity of the app and the small size of the state.</p>
+        <p>To minimize errors during development, I utilized TypeScript and defined specific types for certain values. This provided type safety and helped catch potential errors early on.</p>
+        <p> The main feature of this app is the ability to view GitHub profiles. To achieve this, I implemented a search field with a controlled input. Additionally, I incorporated a timer functionality that helps reduce the time spent on viewing individual profiles, enhancing the overall user experience.</p>
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="../images/36.png" loading="lazy" alt="screenshot">
+          <img src="../images/20.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/37.png" loading="lazy" alt="screenshot">
+          <img src="../images/22.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/38.png" loading="lazy" alt="screenshot">
+          <img src="../images/23.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/39.png" loading="lazy" alt="screenshot">
+          <img src="../images/24.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/40.png" loading="lazy" alt="screenshot">
+          <img src="../images/25.png" loading="lazy" alt="screenshot">
         </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-    <a class="sourse-code-bt" href="https://runner-store.netlify.app" target="_blank">View Live</a>
   </section>
   <footer>
     <div class="footer">
