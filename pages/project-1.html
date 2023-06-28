@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Front-End Developer - Andrew Bidylo</title>
-  <link rel="icon" href="../favicon.ico"/>
+  <link rel="icon" href="../favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="projects-style.css">
@@ -42,77 +42,87 @@
   <section class="max-width about-project" id='about-project'>
 
     <h2 class="title">Pizza Maggiore</h2>
-    <div class="git-btn">
-      <a href="https://github.com/andrewbidylo/pizza-maggiore" target="_blank">
-        <div class="img-git">
-          <img src="../images/icon-git.png" alt="git">GitHub link
-        </div>        
+      <div class="git-btn">
+        <a href="https://github.com/andrewbidylo/pizza-maggiore" target="_blank">
+          <div class="img-git">
+            <img src="../images/icon-git.png" alt="git">GitHub link
+          </div>
       </div>
-    </a>
+      </a>
     </div>
     </div>
-      <br class="discription">
-        <ul>Pizza Maggiore is a single-page app, built with:</ul>
-            <li>- TypeScript</li>
-            <li>- React (Hooks: useState, useEffect, useCallback, useRef)</li>
-            <li>- Redux (Redux Toolkit: useSelector, useDispatch)</li>
-            <li>- React Router (Routes, Route, useParams, Link, useNavigate)</li>
-            <li>- AJAX (AXIOS with async/await and try/catch/finally)</li>
-            <li>- SASS (Modules)</li>
-            <li>- HTML</li>
-            <li>- Testing: Jest</li>
-            <li>- Rerender optimization ( React.Suspense, React.lazy, React.memo, dynamic import, Why-did-you-update, Profiler, etc)</li>
-            <li>- Mock Server: mockapi.io</li>
-        
-        <ul style="margin: 40px 0 10px 0">
-          <li>The functionality of the app: </li>
-          <li>- User can add pizzas to the cart;</li>
-          <li>- Price and quantity are shown in the header, cart and items info;</li>
-          <li>- User can see detailed information about products;</li>
-          <li>- The app generates the query with search parameters in the browser search field to allow users to share the link with found products;</li>
-          <li>- Unpaid products save in the local storage;</li>
-          <li>- etc.</li>
-        </ul>
-        
+    <br class="discription">
+    <ul>Pizza Maggiore is a single-page application built with:</ul>
+    <li>- TypeScript</li>
+    <li>- React (Hooks: useState, useEffect, useCallback, useRef)</li>
+    <li>- Redux (Redux Toolkit: useSelector, useDispatch)</li>
+    <li>- React Router (Routes, Route, useParams, Link, useNavigate)</li>
+    <li>- AJAX (AXIOS with async/await and try/catch/finally)</li>
+    <li>- SASS (Modules)</li>
+    <li>- HTML</li>
+    <li>- Testing: Jest</li>
+    <li>- Rerender optimization ( React.Suspense, React.lazy, React.memo, dynamic import, Why-did-you-update, Profiler,
+      etc)</li>
+    <li>- Mock Server: mockapi.io</li>
 
-      </div>
-      <!-- Slider main container -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img src="../images/41.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/42.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/43.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/44.png" loading="lazy" alt="screenshot">
-          </div>
+    <ul style="margin: 40px 0 10px 0">
+      <li>The functionality of the app includes:</li>
+      <li>- User can add pizzas to the cart.</li>
+      <li>- Price and quantity are shown in the header, cart, and item info.</li>
+      <li>- User can see detailed information about products.</li>
+      <li>- The app generates a query with search parameters in the browser search field, enabling users to share the
+        link with found products.</li>
+      <li>- Unpaid products are saved in the local storage.</li>
+      <li>- And more.</li>
+    </ul>
+
+
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="../images/41.png" loading="lazy" alt="screenshot">
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-slide">
+          <img src="../images/42.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/43.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/44.png" loading="lazy" alt="screenshot">
+        </div>
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
     </div>
   </section>
 
   <!-- Development section -->
   <section class="development max-width">
-    <h1 class="title second">Developmet</h1>
+    <h1 class="title second">Development</h1>
     <div class="discription">
-      To make the code base more predictable and avoid bugs during the development process I choose TypeScript. 
-      As a state management system, I added a Redux and used Redux Toolkit to reduce writing boilerplate code. 
-      Using Redux DevTools I was testing the state during the development process.
+      <p>To enhance code predictability and minimize bugs during the development process, I have chosen for TypeScript.
+      TypeScript brings strong typing and static analysis to the codebase, improving overall code quality and catching
+      potential errors early on.</p>
+      <br>
+      <p>For effective state management, I integrated Redux into the application. To reduce the amount of boilerplate code
+      required, I utilized Redux Toolkit. It provides convenient abstractions and simplifies the process of defining
+      actions, reducers, and store setup.</p>
+      <br>
+      <p>During the development process, I leveraged Redux DevTools to test and inspect the application's state. This tool
+      allowed me to monitor and debug the state changes, ensuring that the application behaved as intended and enabling
+      a smooth development experience.</p> 
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="../images/45.png" loading="lazy"alt="screenshot">
+          <img src="../images/45.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
           <img src="../images/46.png" loading="lazy" alt="screenshot">
@@ -130,7 +140,6 @@
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-
     </div>
     <a class="sourse-code-bt" href="https://pizza-maggiore.netlify.app/" target="_blank">View Live</a>
   </section>
@@ -142,7 +151,5 @@
   <script src="../scripts/script.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="../scripts/swiper.js"></script>
-
 </body>
-
 </html>
