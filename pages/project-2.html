@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Front-End Developer - Andrew Bidylo</title>
-  <link rel="icon" href="../favicon.ico"/>
+  <link rel="icon" href="../favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="projects-style.css">
@@ -31,7 +31,8 @@
   </nav>
   <div class="max-width nav-project-btn">
     <div>
-      <a class="prev-btn" href="./project-1.html"><span><</span> Prev</a>
+      <a class="prev-btn" href="./project-1.html"><span>
+          <</span> Prev</a>
     </div>
     <div>
       <a class="next-btn" href="./project-3.html">Next <span>></span>
@@ -46,77 +47,86 @@
       <a href="https://github.com/andrewbidylo/about-me" target="_blank">
         <div class="img-git">
           <img src="../images/icon-git.png" alt="git">GitHub link
-        </div>        
-      </div>
+        </div>
+    </div>
     </a>
     </div>
     </div>
-      <br class="discription">
-        <ul>About Me is a single-page app, built with:</ul>
-            <li>- JavaScript</li>
-            <li>- React (Hooks: useState, useEffect, useCallback, useRef)</li>
-            <li>- Redux (Redux Toolkit: useSelector, useDispatch)</li>
-            <li>- React Router (Routes, Route, useParams, Link, useNavigate)</li>
-            <li>- AJAX (AXIOS with async/await and try/catch/finally)</li>
-            <li>- SASS (Modules)</li>
-            <li>- HTML</li>
-            <li>- Testing: Jest</li>
-            <li>- Server: Node.js, Express</li>
-            <li>- DB: MongoDB</li>
-        
-        <ul style="margin: 40px 0 10px 0">
-          <li>Users can: </li>
-          <li>- Create an accaunt;</li>
-          <li>- Log in / Log out;</li>
-          <li>- Add posts (title, image, tags, taxt);</li>
-          <li>- Comment posts;</li>
-          <li>- See number of views;</li>
-          <li>- Sort posts by popular;</li>
-          <li>- See posts with particular tags.</li>
-        </ul>
-      </div>
-      <!-- Slider main container -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img src="../images/60.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/61.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/62.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/63.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/64.png" loading="lazy" alt="screenshot">
-          </div>
+    <br class="discription">
+    <ul>About Me is a single-page app built with the following technologies:</ul>
+    <li>- JavaScript</li>
+    <li>- React (Hooks: useState, useEffect, useCallback, useRef)</li>
+    <li>- Redux (Redux Toolkit: useSelector, useDispatch)</li>
+    <li>- React Router (Routes, Route, useParams, Link, useNavigate)</li>
+    <li>- AJAX (AXIOS with async/await and try/catch/finally)</li>
+    <li>- SASS (Modules)</li>
+    <li>- HTML</li>
+    <li>- Testing: Jest</li>
+    <li>- Server: Node.js, Express</li>
+    <li>- Database: MongoDB</li>
+
+    <ul style="margin: 40px 0 10px 0">
+      <li>Users can: </li>
+      <li>- Create an account.</li>
+      <li>- Log in / Log out.</li>
+      <li>- Add posts with title, image, tags, and text.</li>
+      <li>- Comment on posts.</li>
+      <li>- See the number of views for each post.</li>
+      <li>- Sort posts by popularity.</li>
+      <li>- Filter posts by specific tags.</li>
+    </ul>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="../images/60.png" loading="lazy" alt="screenshot">
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-slide">
+          <img src="../images/61.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/62.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/63.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/64.png" loading="lazy" alt="screenshot">
+        </div>
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
     </div>
   </section>
 
   <!-- Development section -->
   <section class="development max-width">
-    <h1 class="title second">Developmet</h1>
+    <h1 class="title second">Development</h1>
     <div class="discription">
-      Development process I started with creating a server using Node.js, Express, Mongoose and MongoDB. 
-      After creating the main CRUD methods I started to create a Client by adding HTML and styles to the app. 
-      To keep track of the global state I chose Redux Toolkit. 
-      To add authorization and authentification functionality in to the app I decided to use JWT. 
-      After the token generates by the server I save the token in the local storage, which allows the app to get a logged-in user by sending an auth-me request to the server even after refreshing the app.
+      <p>During the development process, I followed these steps:</p>
+      <p>1. I started by creating a server using Node.js, Express, Mongoose, and MongoDB. This allowed me to set up the
+        backend infrastructure and implement the necessary CRUD methods for handling data.</p>
+      <p>2. Moving on to the client-side, I focused on building the user interface using React components and JSX. This
+        enabled me to create dynamic and interactive elements for the application.</p>
+      <p>3. To manage the global state of the application, I chose to use Redux Toolkit. This powerful library
+        simplified state management by providing convenient abstractions and reducing boilerplate code.</p>
+      <p>4. For implementing authorization and authentication functionality, I decided to utilize JSON Web Tokens (JWT).
+        This secure method allowed for secure communication between the client and server, ensuring authenticated access
+        to protected resources.</p>
+      <p>5. After generating the JWT token on the server side, I stored it in the local storage of the client. This
+        approach enabled the app to maintain the user's logged-in state even after refreshing the page. By sending an
+        "auth-me" request to the server, the app could retrieve the user's information and maintain a seamless and
+        persistent user experience.</p>
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="../images/65.png" loading="lazy"alt="screenshot">
+          <img src="../images/65.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
           <img src="../images/66.png" loading="lazy" alt="screenshot">

@@ -246,6 +246,10 @@ section .title::after {
 .git-btn a {
   color: crimson;
 }
+.btn-container{
+  display: flex;
+  flex-direction: row;
+}
 .nav-project-btn .next-btn,
 .prev-btn {
   display: flex;

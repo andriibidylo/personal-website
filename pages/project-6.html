@@ -42,9 +42,9 @@
   <!-- about-project section -->
   <section class="max-width about-project" id='about-project'>
 
-    <h2 class="title">Pill Popper</h2>
+    <h2 class="title">Cash Flow</h2>
     <div class="git-btn">
-      <a href="https://github.com/andrewbidylo/pill-popper" target="_blank">
+      <a href="https://github.com/andrewbidylo/cash-flow" target="_blank">
         <div class="img-git">
           <img src="../images/icon-git.png" alt="git">GitHub link
         </div>        
@@ -53,18 +53,19 @@
     </div>
     </div>
       <div class="discription">
-        <p>Pill Popper is a single-page, built with React, JavaScript,HTML, CSS, SASS, WebSocket, Socket IO, Twilio, Pusher. 
-          Back-end: Node.js, Express. Database: PostgreSQL. </p>
+        <p>Cash Flow is a financial dashboard application built using the following technologies:</p>
         <br>
-        <p>As a user you can:</p>
-          <p>- add/edit/delete notifications</p>
-          <p>- set time, dosage, type of notifications</p>
-          <p>- get push/SMS notifications</p>
-          <p>- get info from FDA API</p>
-          <p>- get info about the nearest pharmacies</p>
-          <p>- add family members</p>
-          <p>- change dates</p>
-     
+        <ul>
+          <li>Client-side: TypeScript, React, Redux (RTK Query), Material UI</li>
+          <li>Server-side: Node.js, Express, Mongoose</li>
+          <li>Database: MongoDB</li>
+        </ul>
+
+        <ul style="margin: 40px 0 10px 0">
+          <li>The functionality of the app includes:</li>
+          <li>- On the main page, users can view different types of charts and tables displaying current financial information.</li>
+          <li>- By clicking on the Prediction page, users can access predicted revenue for the next year.</li>
+        </ul>
       </div>
       <!-- Slider main container -->
       <div class="swiper mySwiper">
@@ -76,18 +77,6 @@
           <div class="swiper-slide">
             <img src="../images/49.png" loading="lazy" alt="screenshot">
           </div>
-          <div class="swiper-slide">
-            <img src="../images/50.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/51.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/52.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/53.png" loading="lazy" alt="screenshot">
-          </div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
@@ -95,34 +84,15 @@
       </div>
     </div>
   </section>
- <!-- Project design section -->
- <section class="project-design max-width">
-  <h1 class="title second">ERD</h1>
-  <div class="discription">
-    <p>To create ERD I used app.diagrams.net and created 4 tables: users, children, childrens_medications and time_for taking medications.</p>
-  </div>
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <img src="../images/70.png" loading="lazy" alt="screenshot">
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-  </div>
-
-</section>
   <!-- Development section -->
   <section class="development max-width">
-    <h1 class="title second">Developmet</h1>
+    <h1 class="title second">Development</h1>
     <div class="discription">
-      <p>Development process I started with creating a Database and Server. 
-        Then I created the main app component and went through the small components.</p>
-      <p>To communicate with the back-end and make requests I chose AXIOS library.</p>
-      <p>During development I used useEffect, useState, useContext and own custom hook</p>
+      <p>The development process began with creating a MongoDB database and setting up a Node.js server. Next, a React project was set up using Vite, and the main app component was created. To provide a store from the Redux library, the app component was wrapped with the Provider component.</p>
+      <br>
+      <p>To communicate with the back-end and make requests I have used Redux Toolkit Query. This library simplifies the process of fetching and managing data from the server, providing an efficient solution for data fetching and caching.</p>
+      <br>
+      <p>During development, the useMemo hook was utilized to prevent certain functions from being executed during the initial render. This optimization technique ensures that expensive calculations or function calls are only performed when necessary, improving performance and avoiding unnecessary re-renders.</p>
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
@@ -142,16 +112,13 @@
         <div class="swiper-slide">
           <img src="../images/58.png" loading="lazy" alt="screenshot">
         </div>
-        <div class="swiper-slide">
-          <img src="../images/59.png" loading="lazy" alt="screenshot">
-        </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
 
     </div>
-    <a class="sourse-code-bt" href="https://pill-popper.netlify.app" target="_blank">View Live</a>
+    <a class="sourse-code-bt" href="https://cash-flow-777.netlify.app" target="_blank">View Live</a>
   </section>
   <footer>
     <div class="footer">
