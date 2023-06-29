@@ -376,11 +376,11 @@ footer {
 	transition:background .3s ease, color .3s ease;
 	text-decoration:none;
 	transition:color .3s ease;
-	padding:12px 28px;
+	padding:12px 25px;
 	text-transform:uppercase;
 }
 .btn-group .a{
-  padding: 12px 41px;
+  padding: 12px 38px;
 }
 
 .btn-group > a:nth-of-type(1) {
