@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Front-End Developer - Andrew Bidylo</title>
-  <link rel="icon" href="../favicon.ico"/>
+  <link rel="icon" href="../favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="projects-style.css">
@@ -31,7 +31,8 @@
   </nav>
   <div class="max-width nav-project-btn">
     <div>
-      <a class="prev-btn" href="./project-3.html"><span><</span> Prev</a>
+      <a class="prev-btn" href="./project-3.html"><span>
+          <</span> Prev</a>
     </div>
     <div>
       <a class="next-btn" href="./project-5.html">Next <span>></span>
@@ -41,95 +42,116 @@
   <!-- about-project section -->
   <section class="max-width about-project" id='about-project'>
 
-    <h2 class="title">GitHub Viewer</h2>
+    <h2 class="title">Cloud Storage</h2>
     <div class="btn-wrapper">
       <div class="btn-group" data-grouptype=OR>  
-        <a class="a" href="https://github-viewer-777.netlify.app" target="_blank">Live project</a> 
-        <a class="b" href="https://github.com/andrewbidylo/github-viewer" target="_blank">Code on GitHub</a>
+        <a class="a" target="_blank">Live project</a>
+      
+        <a class="b" href="https://github.com/andrewbidylo/cloud-storage" target="_blank">Code on GitHub</a>
       </div>
     </div>
     </div>
     </div>
-      <div class="discription">
-        <p>The GitHub Viewer is a single-page application built with React, TypeScript, HTML, CSS, and SASS.</p>
-        <p>I developed this app to provide a quick and convenient way to review GitHub accounts. The main feature is a search field with controlled input, allowing users to search for specific GitHub profiles.</p>
-        <p>During the coding process, I encountered challenges related to closures. Specifically, there was an issue with the timer not reaching 0 and a component not unmounting as expected. I spent several hours researching and troubleshooting this problem, delving deeper into the concept of closures. Eventually, I successfully resolved the bug, which significantly enhanced my understanding of closure mechanisms.</p>
-        <p>To retrieve information from GitHub, I utilized the GitHub API, which provided the necessary data for displaying user profiles and other related details.</p>
-      </div>
-      <!-- Slider main container -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img src="../images/28.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/29.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/30.png" loading="lazy" alt="screenshot">
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Project design section -->
-  <section class="project-design max-width">
-    <h1 class="title second">Project design</h1>
     <div class="discription">
-      <p>To create the design of this app I've chosen Figma.</p>
+      <p>Social Network is a large single-page app built with a modern stack of technologies including TypeScript,
+        JavaScript, React, Redux, HTML, CSS3, SASS, Material-UI, and Jest for testing.</p>
+      <p>During my participation in the IT-Incubator front-end course, I had the opportunity to create this app and
+        apply my knowledge in a practical setting, using contemporary coding practices and techniques.</p>
+      <p>After completing the course, I recognized the importance of code predictability and reducing potential mistakes
+        in future development. To address this, I made the decision to refactor the existing JavaScript codebase into
+        TypeScript. This transition allowed for stronger typing and improved overall code quality and reliability.</p>
+      <p>Furthermore, I ensured the correctness of the code by writing tests using the Jest library. These tests
+        provided confidence that the expected results of code execution were accurate, enhancing the robustness of the
+        application. </p>
+
+      <ul style="margin: 10px 0 10px 0">
+        <li>The functionality of the app includes: </li>
+        <li>- Cookie-based authentication with controlled forms for secure user authentication.</li>
+        <li>- Personal page where users can view and modify their information, including the ability to change their
+          profile photo.</li>
+        <li>- Users page with features such as subscriptions, pagination, filtering by name, and sorting based on
+          subscription status.</li>
+        <li>- Chat page implemented using the JavaScript library Socket.IO, enabling real-time communication between
+          participants. The chat displays participant names and profile photos alongside the messages.</li>
+        <li>- Weather page that allows users to check the current weather based on the input city.</li>
+        <li>- And more additional features.</li>
+      </ul>
+
+
+      <p>Finally, the project was deployed on AWS, utilizing the cloud platform's infrastructure to host the
+        application.</p>
+
     </div>
+    <!-- Slider main container -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="../images/27.png" loading="lazy" alt="screenshot">
+          <img src="../images/0.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/26.png" loading="lazy" alt="screenshot">
+          <img src="../images/1.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/2.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/3.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/4.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/5.png" loading="lazy" alt="screenshot">
         </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-
     </div>
+    </div>
+  </section>
 
   </section>
   <!-- Development section -->
   <section class="development max-width">
     <h1 class="title second">Development</h1>
     <div class="discription">
-      <p>Before starting the development process, I made the decision to manage the state of the app using only the React useState hook. This choice was influenced by the simplicity of the app and the small size of the state.</p>
-        <p>To minimize errors during development, I utilized TypeScript and defined specific types for certain values. This provided type safety and helped catch potential errors early on.</p>
-        <p> The main feature of this app is the ability to view GitHub profiles. To achieve this, I implemented a search field with a controlled input. Additionally, I incorporated a timer functionality that helps reduce the time spent on viewing individual profiles, enhancing the overall user experience.</p>
+      To ensure easy scalability of the app, I chose Redux for state management. Initially, I implemented class
+      components and lifecycle methods to handle component behavior. However, I later refactored the code to functional
+      components and utilized React Hooks to improve readability, testability, and debugging capabilities.
+      To handle routing and keep the UI in sync with the browser URL, I employed React Router. Additionally, I
+      implemented a feature that displays error messages for HTTP response codes 400 and 500, providing users with
+      relevant feedback.
+      To enhance user experience, a pre-loader GIF is displayed before the app is rendered, indicating that the app is
+      loading and improving overall usability.
+      Throughout the development process, I encountered numerous challenging tasks, which deepened my understanding of
+      application workflows and design patterns. This experience helped me reduce mistakes and make the codebase more
+      predictable and robust.
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="../images/20.png" loading="lazy" alt="screenshot">
+          <img src="../images/6.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/22.png" loading="lazy" alt="screenshot">
+          <img src="../images/7.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/23.png" loading="lazy" alt="screenshot">
+          <img src="../images/8.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/24.png" loading="lazy" alt="screenshot">
+          <img src="../images/9.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/25.png" loading="lazy" alt="screenshot">
+          <img src="../images/10.png" loading="lazy" alt="screenshot">
         </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
+
     </div>
   </section>
   <footer>
