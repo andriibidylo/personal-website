@@ -400,6 +400,13 @@ footer {
 .btn-group > a:nth-of-type(2):hover {
 	background:#a20232;
 }
+.btn-group > .button_disable:nth-of-type(1) {
+	background:#84818282;
+	color:#FFF;
+  pointer-events: none;
+}
+
+
 
 /* responsive media query start */
 

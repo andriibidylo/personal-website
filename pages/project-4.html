@@ -45,7 +45,7 @@
     <h2 class="title">Cloud Storage</h2>
     <div class="btn-wrapper">
       <div class="btn-group" data-grouptype=OR>  
-        <a class="a" target="_blank">Live project</a>
+        <a class="a button_disable" target="_blank">Live project</a>
       
         <a class="b" href="https://github.com/andrewbidylo/cloud-storage" target="_blank">Code on GitHub</a>
       </div>
@@ -53,42 +53,30 @@
     </div>
     </div>
     <div class="discription">
-      <p>Social Network is a large single-page app built with a modern stack of technologies including TypeScript,
-        JavaScript, React, Redux, HTML, CSS3, SASS, Material-UI, and Jest for testing.</p>
-      <p>During my participation in the IT-Incubator front-end course, I had the opportunity to create this app and
-        apply my knowledge in a practical setting, using contemporary coding practices and techniques.</p>
-      <p>After completing the course, I recognized the importance of code predictability and reducing potential mistakes
-        in future development. To address this, I made the decision to refactor the existing JavaScript codebase into
-        TypeScript. This transition allowed for stronger typing and improved overall code quality and reliability.</p>
-      <p>Furthermore, I ensured the correctness of the code by writing tests using the Jest library. These tests
-        provided confidence that the expected results of code execution were accurate, enhancing the robustness of the
-        application. </p>
+      <p>Cloud Storage is a single-page SaaS product which allows users to store and access their data,
+        files, and information over the internet, instead of using local storage on their computers or devices.
+        Application is built with the following technologies: Client: Next.js, TypeScript,
+        SCSS, Ant Design, Nookies, Axios, HTML. Server: Nest.js, TypeScript, Swagger, Multer, PassportJS(JWT). Database: PostgreSQL.</p>
 
       <ul style="margin: 10px 0 10px 0">
-        <li>The functionality of the app includes: </li>
-        <li>- Cookie-based authentication with controlled forms for secure user authentication.</li>
-        <li>- Personal page where users can view and modify their information, including the ability to change their
-          profile photo.</li>
-        <li>- Users page with features such as subscriptions, pagination, filtering by name, and sorting based on
-          subscription status.</li>
-        <li>- Chat page implemented using the JavaScript library Socket.IO, enabling real-time communication between
-          participants. The chat displays participant names and profile photos alongside the messages.</li>
-        <li>- Weather page that allows users to check the current weather based on the input city.</li>
+        <li>Functionalities for users include: </li>
+        <li>- Cookie-based authentication with form validation.</li>
+        <li>- Creating an account.</li>
+        <li>- Logging in / Logging out.</li>
+        <li>- Adding different types of files (up to 2mb).</li>
+        <li>- Sharing a link to a file.</li>
+        <li>- Viewing only photos.</li>
+        <li>- Viewing profile info.</li>
+        <li>- Moving files to the Trash.</li>
+        <li>- Removing files from the Trash.</li>
         <li>- And more additional features.</li>
       </ul>
-
-
-      <p>Finally, the project was deployed on AWS, utilizing the cloud platform's infrastructure to host the
-        application.</p>
 
     </div>
     <!-- Slider main container -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="../images/0.png" loading="lazy" alt="screenshot">
-        </div>
         <div class="swiper-slide">
           <img src="../images/1.png" loading="lazy" alt="screenshot">
         </div>
@@ -104,6 +92,13 @@
         <div class="swiper-slide">
           <img src="../images/5.png" loading="lazy" alt="screenshot">
         </div>
+        <div class="swiper-slide">
+          <img src="../images/6.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/7.png" loading="lazy" alt="screenshot">
+        </div>
+        
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
@@ -117,27 +112,26 @@
   <section class="development max-width">
     <h1 class="title second">Development</h1>
     <div class="discription">
-      To ensure easy scalability of the app, I chose Redux for state management. Initially, I implemented class
-      components and lifecycle methods to handle component behavior. However, I later refactored the code to functional
-      components and utilized React Hooks to improve readability, testability, and debugging capabilities.
-      To handle routing and keep the UI in sync with the browser URL, I employed React Router. Additionally, I
-      implemented a feature that displays error messages for HTTP response codes 400 and 500, providing users with
-      relevant feedback.
-      To enhance user experience, a pre-loader GIF is displayed before the app is rendered, indicating that the app is
-      loading and improving overall usability.
-      Throughout the development process, I encountered numerous challenging tasks, which deepened my understanding of
-      application workflows and design patterns. This experience helped me reduce mistakes and make the codebase more
-      predictable and robust.
+      <p>To start the development process, I dived into exploring server-side architecture.
+         After researching various backend technologies, I opted for Nest.js,
+          a progressive Node.js framework known for its scalability and modularity.
+           Nest.js provided a solid foundation for building the backend of the Cloud Storage app, enabling me to efficiently manage server-side operations.</p>
+    <p>With Nest.js as the backbone of the backend, I proceeded to create RESTful API endpoints.
+       These endpoints served as a bridge between the client and server, handling essential operations such as user registration, login, and file management.
+        To store user information and files metadata, I integrated PostgreSQL, a powerful relational database, into the backend.
+         This database choice ensured data integrity and efficient handling of user-related information.</p>
+    <p>Ensuring robust security for the application was a top priority.
+       To achieve this, I implemented PassportJS with JSON Web Tokens (JWT) for user authentication and authorization.
+        This combination provided a reliable mechanism to safeguard user data and maintain secure access to the Cloud Storage app.</p>
+    <p>To enable users to effortlessly add files to their cloud storage, I incorporated Multer, a middleware for handling file uploads.
+       With Multer's assistance, users could upload files of varying types, enhancing the functionality of the app.</p>
+    <p>With the backend foundation in place, I shifted my focus to the front-end development. Next.js, combined with TypeScript,
+       emerged as my preferred choice for crafting the user interface. Next.js's server-side rendering capabilities and TypeScript's
+    </p>
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="../images/6.png" loading="lazy" alt="screenshot">
-        </div>
-        <div class="swiper-slide">
-          <img src="../images/7.png" loading="lazy" alt="screenshot">
-        </div>
         <div class="swiper-slide">
           <img src="../images/8.png" loading="lazy" alt="screenshot">
         </div>
@@ -146,6 +140,15 @@
         </div>
         <div class="swiper-slide">
           <img src="../images/10.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/11.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/12.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/13.png" loading="lazy" alt="screenshot">
         </div>
       </div>
       <div class="swiper-pagination"></div>
