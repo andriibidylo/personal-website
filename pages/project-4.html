@@ -20,9 +20,9 @@
       <div class="logo"><a href="../index.html#">Front-End Developer <span>Andrii Bidylo</span></a></div>
       <ul class="menu">
         <li><a href="../index.html#about" class="menu-btn">About</a></li>
-        <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
-        <li><a href="index.html#portfolio" class="menu-btn">Portfolio</a></li>
-        <li><a href="index.html#contact" class="menu-btn">Contacts</a></li>
+        <li><a href="../index.html#skills" class="menu-btn">Skills</a></li>
+        <li><a href="../index.html#portfolio" class="menu-btn">Portfolio</a></li>
+        <li><a href="../index.html#contact" class="menu-btn">Contacts</a></li>
       </ul>
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -42,30 +42,39 @@
   <!-- about-project section -->
   <section class="max-width about-project" id='about-project'>
 
-    <h2 class="title">Runner</h2>
-    <div class="git-btn">
-      <a href="https://github.com/andriibidylo/shoe-store" target="_blank">
-        <div class="img-git">
-          <img src="../images/icon-git.png" alt="git">GitHub link
-        </div>
+    <h2 class="title">Cloud Storage</h2>
+    <div class="btn-wrapper">
+      <div class="btn-group" data-grouptype=OR>  
+        <a class="a button_disable" target="_blank">Live project</a>
+      
+        <a class="b" href="https://github.com/andriibidylo/cloud-storage" target="_blank">Code on GitHub</a>
+      </div>
     </div>
-    </a>
     </div>
     </div>
     <div class="discription">
-      <p>Runner is a single-page e-commerce application built with React, JavaScript, TypeScript, HTML, CSS, and SASS.
-        The back-end is powered by mockapi.io.</p>
-      <br>
-      <p>As a user, you have the following functionalities:</p>
-      <p>- add/remove products from the cart.</p>
-      <p>- view the products in the cart.</p>
-      <p>- mark/unmark favorite items.</p>
-      <p>- view the favorite items.</p>
-      <p>- see the price for the items added to the cart in the header and cart sections.</p>
-      <p>- search for items by name.</p>
-      <p>- purchase items.</p>
-      <p>- view the ordered items.</p>
+      <p>Cloud Storage is a single-page SaaS product which allows users to store and access their data,
+        files, and information over the internet, instead of using local storage on their computers or devices.</p>
+        <p style="margin: 10px 0 10px 0">Application is built with the following technologies:</p>
+        <ul>
+          <li>Client: Next.js, TypeScript, SCSS, Ant Design, Nookies, Axios, HTML.</li>
+          <li>Server: Nest.js, TypeScript, Swagger, Multer, PassportJS(JWT).</li>
+          <li>Database: PostgreSQL.</li>
+        </ul>
 
+      <ul style="margin: 10px 0 10px 0">
+        <li>Functionalities for users include: </li>
+        <li>- Cookie-based authentication with form validation.</li>
+        <li>- Creating an account.</li>
+        <li>- Logging in / Logging out.</li>
+        <li>- Adding different types of files (up to 2mb).</li>
+        <li>- Sharing a link to a file.</li>
+        <li>- Viewing only photos.</li>
+        <li>- Viewing profile info.</li>
+        <li>- Moving files to the Trash.</li>
+        <li>- Removing files from the Trash.</li>
+        <li>- And more additional features.</li>
+      </ul>
 
     </div>
     <!-- Slider main container -->
@@ -73,17 +82,27 @@
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="../images/31.png" loading="lazy" alt="screenshot">
+          <img src="../images/1.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/32.png" loading="lazy" alt="screenshot">
+          <img src="../images/2.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/33.png" loading="lazy" alt="screenshot">
+          <img src="../images/3.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/34.png" loading="lazy" alt="screenshot">
+          <img src="../images/4.png" loading="lazy" alt="screenshot">
         </div>
+        <div class="swiper-slide">
+          <img src="../images/5.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/6.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/7.png" loading="lazy" alt="screenshot">
+        </div>
+        
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
@@ -91,44 +110,56 @@
     </div>
     </div>
   </section>
+
+  </section>
   <!-- Development section -->
   <section class="development max-width">
     <h1 class="title second">Development</h1>
     <div class="discription">
-      <p>For development, I chose React as the primary framework and started by focusing on implementing the core
-        functionality and creating reusable components. I followed a step-by-step approach to gradually add new features
-        and enhance the application.</p>
-      <p>To simulate data, I utilized the mockapi.io platform to create fake data. To communicate with the back-end and
-        make requests, I opted for the AXIOS library, leveraging its async/await functionality for efficient
-        asynchronous operations.</p>
-      <p>Throughout the development process, I made use of various React hooks such as useEffect, useState, and
-        useContext. Additionally, I implemented custom hooks to encapsulate and reuse specific logic across different
-        components. These hooks contributed to the overall organization and maintainability of the codebase.</p>
+      <p>To start the development process, I dived into exploring server-side architecture.
+         After researching various backend technologies, I opted for Nest.js,
+          a progressive Node.js framework known for its scalability and modularity.
+           Nest.js provided a solid foundation for building the backend of the Cloud Storage app, enabling me to efficiently manage server-side operations.</p>
+    <p>With Nest.js as the backbone of the backend, I proceeded to create RESTful API endpoints.
+       These endpoints served as a bridge between the client and server, handling essential operations such as user registration, login, and file management.
+        To store user information and files metadata, I integrated PostgreSQL, a powerful relational database, into the backend.
+         This database choice ensured data integrity and efficient handling of user-related information.</p>
+    <p>Ensuring robust security for the application was a top priority.
+       To achieve this, I implemented PassportJS with JSON Web Tokens (JWT) for user authentication and authorization.
+        This combination provided a reliable mechanism to safeguard user data and maintain secure access to the Cloud Storage app.</p>
+    <p>To enable users to effortlessly add files to their cloud storage, I incorporated Multer, a middleware for handling file uploads.
+       With Multer's assistance, users could upload files of varying types, enhancing the functionality of the app.</p>
+    <p>With the backend foundation in place, I shifted my focus to the front-end development. Next.js, combined with TypeScript,
+       emerged as my preferred choice for crafting the user interface. Next.js's server-side rendering capabilities and TypeScript's
+    </p>
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="../images/36.png" loading="lazy" alt="screenshot">
+          <img src="../images/8.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/37.png" loading="lazy" alt="screenshot">
+          <img src="../images/9.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/38.png" loading="lazy" alt="screenshot">
+          <img src="../images/10.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/39.png" loading="lazy" alt="screenshot">
+          <img src="../images/11.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/40.png" loading="lazy" alt="screenshot">
+          <img src="../images/12.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/13.png" loading="lazy" alt="screenshot">
         </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
+
     </div>
-    <a class="sourse-code-bt" href="https://runner-store.netlify.app" target="_blank">View Live</a>
   </section>
   <footer>
     <div class="footer">

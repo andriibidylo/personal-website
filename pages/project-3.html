@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="projects-style.css">
 </head>
-
 <body>
   <div class="scroll-up-btn">
     <i class="fas fa-angle-up"></i>
@@ -20,9 +19,9 @@
       <div class="logo"><a href="../index.html#">Front-End Developer <span>Andrii Bidylo</span></a></div>
       <ul class="menu">
         <li><a href="../index.html#about" class="menu-btn">About</a></li>
-        <li><a href="../index.html#skills" class="menu-btn">Skills</a></li>
-        <li><a href="../index.html#portfolio" class="menu-btn">Portfolio</a></li>
-        <li><a href="../index.html#contact" class="menu-btn">Contacts</a></li>
+        <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
+        <li><a href="index.html#portfolio" class="menu-btn">Portfolio</a></li>
+        <li><a href="index.html#contact" class="menu-btn">Contacts</a></li>
       </ul>
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -38,37 +37,43 @@
       </a>
     </div>
   </div>
+
   <!-- about-project section -->
   <section class="max-width about-project" id='about-project'>
 
-    <h2 class="title">GitHub Viewer</h2>
-    <div class="git-btn">
-      <a href="https://github.com/andriibidylo/github-viewer" target="_blank">
-        <div class="img-git">
-          <img src="../images/icon-git.png" alt="git">GitHub link
-        </div>        
-      </div>
-    </a>
+    <h2 class="title">Cash Flow</h2>
+    <div class="btn-wrapper">
+    <div class="btn-group" data-grouptype=OR>  
+      <a class="a" href="https://cash-flow-777.netlify.app" target="_blank">Live project</a>
+      <a class="b" href="https://github.com/andriibidylo/cash-flow" target="_blank">Code on GitHub</a>
+    </div>
+  </div>
     </div>
     </div>
       <div class="discription">
-        <p>The GitHub Viewer is a single-page application built with React, TypeScript, HTML, CSS, and SASS.</p>
-        <p>I developed this app to provide a quick and convenient way to review GitHub accounts. The main feature is a search field with controlled input, allowing users to search for specific GitHub profiles.</p>
-        <p>During the coding process, I encountered challenges related to closures. Specifically, there was an issue with the timer not reaching 0 and a component not unmounting as expected. I spent several hours researching and troubleshooting this problem, delving deeper into the concept of closures. Eventually, I successfully resolved the bug, which significantly enhanced my understanding of closure mechanisms.</p>
-        <p>To retrieve information from GitHub, I utilized the GitHub API, which provided the necessary data for displaying user profiles and other related details.</p>
+        <p>Cash Flow is a financial dashboard application built using the following technologies:</p>
+        <br>
+        <ul>
+          <li>Client-side: TypeScript, React, Redux (RTK Query), Material UI</li>
+          <li>Server-side: Node.js, Express, Mongoose</li>
+          <li>Database: MongoDB</li>
+        </ul>
+
+        <ul style="margin: 40px 0 10px 0">
+          <li>The functionality of the app includes:</li>
+          <li>- On the main page, users can view different types of charts and tables displaying current financial information.</li>
+          <li>- By clicking on the Prediction page, users can access predicted revenue for the next year.</li>
+        </ul>
       </div>
       <!-- Slider main container -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <img src="../images/28.png" loading="lazy" alt="screenshot">
+            <img src="../images/48.png" loading="lazy" alt="screenshot">
           </div>
           <div class="swiper-slide">
-            <img src="../images/29.png" loading="lazy" alt="screenshot">
-          </div>
-          <div class="swiper-slide">
-            <img src="../images/30.png" loading="lazy" alt="screenshot">
+            <img src="../images/49.png" loading="lazy" alt="screenshot">
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -77,62 +82,46 @@
       </div>
     </div>
   </section>
-
-  <!-- Project design section -->
-  <section class="project-design max-width">
-    <h1 class="title second">Project design</h1>
-    <div class="discription">
-      <p>To create the design of this app I've chosen Figma.</p>
-    </div>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <img src="../images/27.png" loading="lazy" alt="screenshot">
-        </div>
-        <div class="swiper-slide">
-          <img src="../images/26.png" loading="lazy" alt="screenshot">
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-    </div>
-
-  </section>
   <!-- Development section -->
   <section class="development max-width">
     <h1 class="title second">Development</h1>
     <div class="discription">
-      <p>Before starting the development process, I made the decision to manage the state of the app using only the React useState hook. This choice was influenced by the simplicity of the app and the small size of the state.</p>
-        <p>To minimize errors during development, I utilized TypeScript and defined specific types for certain values. This provided type safety and helped catch potential errors early on.</p>
-        <p> The main feature of this app is the ability to view GitHub profiles. To achieve this, I implemented a search field with a controlled input. Additionally, I incorporated a timer functionality that helps reduce the time spent on viewing individual profiles, enhancing the overall user experience.</p>
+      <p>The development process began with creating a MongoDB database and setting up a Node.js server. Next, a React project was set up using Vite, and the main app component was created. To provide a store from the Redux library, the app component was wrapped with the Provider component.</p>
+      <br>
+      <p>To communicate with the back-end and make requests I have used Redux Toolkit Query. This library simplifies the process of fetching and managing data from the server, providing an efficient solution for data fetching and caching.</p>
+      <br>
+      <p>During development, the useMemo hook was utilized to prevent certain functions from being executed during the initial render. This optimization technique ensures that expensive calculations or function calls are only performed when necessary, improving performance and avoiding unnecessary re-renders.</p>
     </div>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img src="../images/20.png" loading="lazy" alt="screenshot">
+          <img src="../images/50.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/22.png" loading="lazy" alt="screenshot">
+          <img src="../images/51.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/23.png" loading="lazy" alt="screenshot">
+          <img src="../images/52.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/24.png" loading="lazy" alt="screenshot">
+          <img src="../images/53.png" loading="lazy" alt="screenshot">
         </div>
         <div class="swiper-slide">
-          <img src="../images/25.png" loading="lazy" alt="screenshot">
+          <img src="../images/54.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/55.png" loading="lazy" alt="screenshot">
+        </div>
+        <div class="swiper-slide">
+          <img src="../images/56.png" loading="lazy" alt="screenshot">
         </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
+
     </div>
-    <a class="sourse-code-bt" href="https://github-viewer-777.netlify.app" target="_blank">View Live</a>
   </section>
   <footer>
     <div class="footer">
@@ -142,7 +131,5 @@
   <script src="../scripts/script.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="../scripts/swiper.js"></script>
-
 </body>
-
 </html>

@@ -511,6 +511,10 @@ margin-left: 50px;
   background: none;
 }
 
+.button_disable{
+  background-color: #8d8c8c82;
+}
+
 /* responsive media query start */
 @media (max-width: 1104px) {
   .about .about-content .left img {
